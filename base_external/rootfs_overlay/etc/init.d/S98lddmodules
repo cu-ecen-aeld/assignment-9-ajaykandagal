@@ -3,14 +3,16 @@
 case "$1" in
     start)
        echo "Loading ldd kernel modules"
-       /usr/bin/ldd/scull_load
-       /usr/bin/ldd/misc_load faulty
-       insmod /usr/bin/ldd/hello.ko
+       cd /usr/bin/
+       scull_load
+       module_load faulty
+       insmod hello.ko
        ;;
     stop)
        echo "Unloading ldd kernel modules"
-       /usr/bin/ldd/scull_unload
-       /usr/bin/ldd/misc_unload faulty
+       cd /usr/bin/
+       scull_unload
+       module_unload faulty
        rmmod hello
        ;;
     *)
