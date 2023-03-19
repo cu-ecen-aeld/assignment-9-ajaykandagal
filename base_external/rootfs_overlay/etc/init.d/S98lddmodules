@@ -7,6 +7,7 @@ case "$1" in
        scull_load
        module_load faulty
        insmod hello.ko
+       aesdchar_load
        ;;
     stop)
        echo "Unloading ldd kernel modules"
@@ -14,6 +15,7 @@ case "$1" in
        scull_unload
        module_unload faulty
        rmmod hello
+       aesdchar_unload
        ;;
     *)
        echo "Usage: $0 {start|stop}"
