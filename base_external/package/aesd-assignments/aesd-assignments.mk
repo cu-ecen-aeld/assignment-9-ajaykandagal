@@ -6,14 +6,14 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD_ASSIGNMENTS_VERSION = 0212381bbcfca3b536497a1fd1cdacddfbb596dc
+AESD_ASSIGNMENTS_VERSION = 3cf228b3e4588144c91f98d7ec00f20797daf818
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
 AESD_ASSIGNMENTS_SITE = git@github.com:cu-ecen-aeld/assignments-3-and-later-ajaykandagal.git
 AESD_ASSIGNMENTS_SITE_METHOD = git
 AESD_ASSIGNMENTS_GIT_SUBMODULES = YES
-AESD_MODULE_SUBDIRS = aesd-char-driver
+AESD_ASSIGNMENTS_MODULE_SUBDIRS = aesd-char-driver 
 
 # TODO add your aesdsocket application build steps below
 define AESD_ASSIGNMENTS_BUILD_CMDS
